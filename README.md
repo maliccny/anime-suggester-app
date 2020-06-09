@@ -43,7 +43,7 @@ An App offering suggestions for Anime to watch, gives different choicies of Anim
 
 ## Wireframes
 
-https://wireframe.cc/pro/pp/84310c826302744 
+https://wireframe.cc/uh7vhb 
 
 
 #### MVP 
@@ -79,7 +79,7 @@ https://wireframe.cc/pro/pp/84310c826302744
 
 ## Priority Matrix
 
-![Priority Matrix](https://res.cloudinary.com/db0kbxvhr/image/upload/c_scale,w_500/v1577996310/Priority-Matrix_q44ll0.jpg)
+![Priority Matrix](https://i.imgur.com/NxykFu2.jpg)
 
 ## Timeframes
 
