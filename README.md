@@ -79,7 +79,7 @@ https://wireframe.cc/uh7vhb
 
 ## Priority Matrix
 
-![Priority Matrix](https://i.imgur.com/NxykFu2.jpg)
+![Priority Matrix](https://i.imgur.com/ohFEEw0.jpg)
 
 ## Timeframes
 
