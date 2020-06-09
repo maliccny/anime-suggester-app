@@ -6,7 +6,7 @@ Link Placeholder
 
 ## Project Description
 
-An App offering suggestions for Anime to watch, gives different choicies of Anime and a breif description of the anime and key details that may he helpful to the user to make a choice. 
+An App offering suggestions for Anime to watch, gives different choices of Anime and a brief description of the anime as well as key details that may he helpful to the user to make a choice. 
 
 ## API and Data Sample
 
@@ -69,11 +69,11 @@ https://wireframe.cc/uh7vhb
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 8| Project Prompt | Incomplete
-|June 9| Wireframes / Priority Matrix / Timeframes | Incomplete
-|June 10| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|June 11| Initial Clickable Model  | Incomplete
-|June 12| MVP | Incomplete
+|June 8| Project Prompt; approval | complete
+|June 9| HTML skeleton, pseudocode for API | Incomplete
+|June 10| implement API code | Incomplete
+|June 11| CSS, Initial Clickable Model | Incomplete
+|June 12| PostMVP | Incomplete
 |June 15| Present | Incomplete
 
 
