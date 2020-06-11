@@ -1,5 +1,5 @@
 body {
-  background: green;
+
   
 }
 
@@ -36,5 +36,18 @@ ul {
 .button {
   display: flex;
   align-items: flex-end;
-  background: red;
+
+}
+
+.youtube {
+  display: flex;
+  align-items: center;
+}
+iframe {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
 }

@@ -8,6 +8,9 @@ async function getAnime() {
   let id = Math.ceil(Math.random() * Math.floor(100));
   let animeObj = await axios.get(`https://kitsu.io/api/edge/anime/${id}`);
 
+
+  //printing of info in console, testing purposes
+
   console.log(`ID: ${animeObj.data.data.id}`);
   console.log(`Title: ${animeObj.data.data.attributes.canonicalTitle}`);
   console.log(`Start-Date: ${animeObj.data.data.attributes.startDate}`);
@@ -18,11 +21,14 @@ async function getAnime() {
   console.log(`Status: ${animeObj.data.data.attributes.status}`);
   console.log(`Summary: ${animeObj.data.data.attributes.synopsis}`);
 
+  //inserting image of anime to DOM
+
   sectionInfo.innerHTML += 
     `<div>
       <img src=${animeObj.data.data.attributes.posterImage.original}>
     </div>`;
 
+  // inferting of anime info
   sectionInfo.innerHTML +=
     `<div>
       <ul>
@@ -41,8 +47,10 @@ async function getAnime() {
   
 }
 
+
 function removeInfo() {
   const oldSection = document.querySelector('#section-info')
+  let oldYoutube = document.querySelector('#youtube')
   while (oldSection.lastChild) {
     oldSection.removeChild(oldSection.lastChild)
   }
