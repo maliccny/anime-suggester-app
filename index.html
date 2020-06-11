@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link href="style.css" rel="stylesheet"> -->
-  <!-- <script defer type="text/javascript" src="script.js"></script> -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer type="text/javascript" src="script.js"></script>
+  <link defer href="style.css" rel="stylesheet">
   <title>Anime Suggester</title>
 </head>
 <body>
@@ -12,17 +13,13 @@
     <h1>Welcome To The Anime Suggester</h1>
   </header>
   <main>
-    <section id="info">
-      <img src="https://media.kitsu.io/anime/poster_images/1/original.jpg?1431697256" alt="">
-      <ul>
-        <li>Title: Cowboy Bebop</li>
-        <li>airdate: "1998-04-01"</li>
-        <li>episodeCount: 26</li>
-        <li>"popularityRank": 26</li>
-      </ul>
-      <p>Synopsis: "In the year 2071, humanity has colonoized several of the planets and moons..."</p>
-      <button class="button">Button</button></h2>
+    <div class="button">
+      <button>Suggest An Anime</button>
+    </div>
+    <section id="section-info">
     </section>
+    
+    
 
     <section id="youtube">
       <h1>Youtube embedded opening goes here</h1>
@@ -34,3 +31,16 @@
   </footer>
 </body>
 </html>
+
+<div>
+  <ul>
+    <li>Title: ${animeObj.data.data.attributes.canonicalTitle}</li>
+    <li>Start-Date: ${animeObj.data.data.attributes.startDate}</li>
+    <li>Episode Count: ${animeObj.data.data.attributes.episodeCount}</li>
+    <li>Type Of Show: ${animeObj.data.data.attributes.showType}</li>
+    <li>Episode Length: ${animeObj.data.data.attributes.episodeLength}</li>
+    <li>Rating: ${animeObj.data.data.attributes.ageRatingGuide}</li>
+    <li>Status: ${animeObj.data.data.attributes.status}</li>
+  </ul>
+</div>
+

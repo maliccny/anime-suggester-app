@@ -1,0 +1,40 @@
+body {
+  background: green;
+  
+}
+
+header {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.section-info {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  /* flex-flow: row wrap; */
+  /* align-items: center; */
+
+  border: 2px solid black;
+  border-radius: 8px;
+  /* margin: 40px 0px 0px 0px; */
+  /* padding: 5px; */
+  width: 300px;
+}
+
+
+p, ul {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  background: red;
+}
