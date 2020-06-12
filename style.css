@@ -5,10 +5,33 @@ body {
 
 header {
   text-align: center;
+  background: #1f1d08;
+  color: #94ae3f;
   border: 1px solid black;
+  padding: 3px;
 }
 
-.section-info {
+p {
+  padding: 25px;
+}
+
+li {
+  text-align: left;
+  padding: 9px;
+}
+
+#info-button-div {
+  display: flex;
+  flex-direction: row;
+  background-image: url("https://i.imgur.com/EGDdTbq.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ebebeb;
+  padding: 56px;
+  
+}
+
+#section-info {
   display: flex;
   flex-direction: row;
 }
@@ -31,23 +54,40 @@ p, ul {
 
 ul {
   list-style-type: none;
+  padding: 0px 63px;
 }
 
-.button {
+button {
   display: flex;
-  align-items: flex-end;
-
+  align-items: flex-start;
+  height: 57px;
+  width: 91px;
+  padding: 11px;
+  background-color: #94ae3f;
+  color: #1f1d08;
+  border-radius: 25px;
+  /* margin: 0 10px; */
 }
 
-.youtube {
+#youtube {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  background: #101321;
+  padding: 34px;
 }
+
 iframe {
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 footer {
   text-align: center;
+  background-color: #243754;
+  color: #94ae3f;
 }
+
