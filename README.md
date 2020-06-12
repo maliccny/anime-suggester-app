@@ -70,9 +70,9 @@ https://wireframe.cc/uh7vhb
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 8| Project Prompt; approval | complete
-|June 9| HTML skeleton, pseudocode for API | Incomplete
-|June 10| implement API code | Incomplete
-|June 11| CSS, Initial Clickable Model | Incomplete
+|June 9| HTML skeleton, pseudocode for API | complete
+|June 10| implement API code | complete
+|June 11| CSS, Initial Clickable Model | complete
 |June 12| PostMVP | Incomplete
 |June 15| Present | Incomplete
 
