@@ -1,6 +1,5 @@
 body {
-
-  
+  font-family: 'Odibee Sans', cursive;
 }
 
 header {
@@ -9,6 +8,9 @@ header {
   color: #94ae3f;
   border: 1px solid black;
   padding: 3px;
+  /* font-family: 'Balsamiq Sans', cursive; */
+  /* font-family: 'Odibee Sans', cursive; */
+  font-family: 'Sriracha', cursive;
 }
 
 p {
@@ -28,6 +30,8 @@ li {
   background-position: center;
   color: #ebebeb;
   padding: 56px;
+  font-size: 22px;
+  
   
 }
 
@@ -62,10 +66,11 @@ button {
   align-items: flex-start;
   height: 57px;
   width: 91px;
-  padding: 11px;
+  padding: 3px;
   background-color: #94ae3f;
   color: #1f1d08;
   border-radius: 25px;
+  font-family: 'Sriracha', cursive;
   /* margin: 0 10px; */
 }
 
