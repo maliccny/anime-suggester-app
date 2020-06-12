@@ -50,6 +50,7 @@ async function getAnime() {
   
   // sectionInfo.innerHTML += `<p>Summary: ${animeObj.data.data.attributes.synopsis}</p>`;
 
+  // youtube functionality
   
   console.log(videoTag)
   console.log(videoTag.src)
