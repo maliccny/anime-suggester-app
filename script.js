@@ -48,7 +48,6 @@ async function getAnime() {
       <p>Summary: ${animeObj.data.data.attributes.synopsis}</p>
     </div>`;
   
-  // sectionInfo.innerHTML += `<p>Summary: ${animeObj.data.data.attributes.synopsis}</p>`;
 
   // youtube functionality
   

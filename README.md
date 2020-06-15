@@ -2,7 +2,7 @@
 
 ## anime-suggester-app
 
-Link Placeholder
+https://maliccny.github.io/anime-suggester-app/
 
 ## Project Description
 
@@ -73,7 +73,7 @@ https://wireframe.cc/uh7vhb
 |June 9| HTML skeleton, pseudocode for API | complete
 |June 10| implement API code | complete
 |June 11| CSS, Initial Clickable Model | complete
-|June 12| PostMVP | Incomplete
+|June 12| PostMVP | complete
 |June 15| Present | Incomplete
 
 
@@ -85,32 +85,78 @@ https://wireframe.cc/uh7vhb
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML Structure | M | 1hr|  min | min |
-| Basic CSS Styles | M | 3hrs| hrs | hrs |
-| buttons | M | 2hrs | hr | hr |
-| API to Display title and synopsis for other information | H | 4hrs | hrs | hrs |
-| second API for displaying animations | H | 4hrs | hrs | hrs |
-| API to display opening theme song | H | 4hrs | min | min |
-| Additional features | H | 3hrs | hr | hr |
-| input box for manually searching for a specific anime | M | 4hrs | min | min |
-| Additional Styling Effects | L | 2hrs | hrs | hrs |
-| Total | H | 26hrs| hrs | hrs |
+| HTML Structure | M | 1hr|  1hr | 1hr |
+| Basic CSS Styles | M | 3hrs| 4hrs | 4hrs |
+| buttons | M | 2hrs | 1hr | 1hr |
+| API to Display title and synopsis for other information | H | 4hrs | 3hrs | 3hrs |
+| API to display opening theme song | H | 4hrs | 5hrs | 5hrs |
+| Additional Styling Effects | L | 2hrs | 2hrs | 2hrs |
+| Total | H | 20hrs| 20hrs | 20hrs |
 
 
 ## Code Snippet
 
-will update later 
-
-**CSS**
-```
-will update later 
-```
 **JS**
 
 ```
-will update later 
+async function getAnime() {
+
+  removeInfo()
+  const sectionInfo = document.querySelector('#section-info');
+  let videoTag = document.querySelector('iframe')
+  let id = Math.ceil(Math.random() * Math.floor(100));
+  let animeObj = await axios.get(`https://kitsu.io/api/edge/anime/${id}`);
+  let titleOpen = `${animeObj.data.data.attributes.canonicalTitle} Opening`
+  console.log(titleOpen)
+  let vidObj = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${titleOpen}&key=AIzaSyCdNw0Cahn4NwywdgWzL802Nwnk3UTUWxY`);
+  let videoCode = vidObj.data.items[0].id.videoId;
+  console.log(videoCode);
+
+  //printing of info in console, testing purposes
+
+  console.log(`ID: ${animeObj.data.data.id}`);
+  console.log(`Title: ${animeObj.data.data.attributes.canonicalTitle}`);
+  console.log(`Start-Date: ${animeObj.data.data.attributes.startDate}`);
+  console.log(`Episode Count: ${animeObj.data.data.attributes.episodeCount}`);
+  console.log(`Type Of Show: ${animeObj.data.data.attributes.showType}`);
+  console.log(`Episode Length: ${animeObj.data.data.attributes.episodeLength}`);
+  console.log(`Rating: ${animeObj.data.data.attributes.ageRatingGuide}`);
+  console.log(`Status: ${animeObj.data.data.attributes.status}`);
+  console.log(`Summary: ${animeObj.data.data.attributes.synopsis}`);
+
+  //inserting image of anime to DOM
+
+  sectionInfo.innerHTML += 
+    `<div>
+      <img src=${animeObj.data.data.attributes.posterImage.original}>
+    </div>`;
+
+  // inferting of anime info
+  sectionInfo.innerHTML +=
+    `<div>
+      <ul>
+        <li>Title: ${animeObj.data.data.attributes.canonicalTitle}</li>
+        <li>Start-Date: ${animeObj.data.data.attributes.startDate}</li>
+        <li>Episode Count: ${animeObj.data.data.attributes.episodeCount}</li>
+        <li>Type Of Show: ${animeObj.data.data.attributes.showType}</li>
+        <li>Episode Length: ${animeObj.data.data.attributes.episodeLength}</li>
+        <li>Rating: ${animeObj.data.data.attributes.ageRatingGuide}</li>
+        <li>Status: ${animeObj.data.data.attributes.status}</li>
+      </ul>
+      <p>Summary: ${animeObj.data.data.attributes.synopsis}</p>
+    </div>`;
+  
+
+  // youtube functionality
+  
+  console.log(videoTag)
+  console.log(videoTag.src)
+  videoTag.src = `https://www.youtube.com/embed/${videoCode}?autoplay=1`
+  console.log(videoTag.src)
+  
+} 
 ```
 
 ## Change Log
 
-will update later 
+scrapped idea for 3rd api
