@@ -33,7 +33,7 @@ async function getAnime() {
       <img src=${animeObj.data.data.attributes.posterImage.original}>
     </div>`;
 
-  // inferting of anime info
+  // inserting of anime info
   sectionInfo.innerHTML +=
     `<div>
       <ul>
@@ -61,7 +61,6 @@ async function getAnime() {
 
 function removeInfo() {
   const oldSection = document.querySelector('#section-info')
-  let oldYoutube = document.querySelector('#youtube')
   while (oldSection.lastChild) {
     oldSection.removeChild(oldSection.lastChild)
   }
